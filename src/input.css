@@ -1,0 +1,43 @@
+.arrow-buttons svg {
+  opacity: 0;
+  margin-left: -8px;
+  transition: all 0.5s;
+}
+.arrow-buttons:hover svg {
+  opacity: 1;
+  margin-left: 5px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-gradient {
+  background-size: 300% 300%;
+  animation: GradientAnimation 10s ease infinite;
+  -webkit-animation: GradientAnimation 10s ease infinite;
+}
+
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
